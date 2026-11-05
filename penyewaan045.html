@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NONAWIE Rent Cars - Form Penyewaan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>NONAWIE RENT CARS</h1>
+        <p>Formulir Penyewaan Kendaraan</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="beranda045.html">Beranda</a></li>
+            <li><a href="katalog045.html">Katalog Mobil</a></li>
+            <li><a href="penyewaan045.html">Form Penyewaan</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Form Penyewaan Mobil</h2>
+            <p>Silakan isi formulir berikut untuk melakukan penyewaan.</p>
+
+            <form id="formPenyewaan">
+
+                <div>
+                    <label for="nama">Nama Lengkap:</label>
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        placeholder="Masukkan nama lengkap"
+                        required
+                        minlength="3">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="mobil">Pilihan Mobil:</label>
+
+                    <select id="mobil" name="mobil" required>
+                        <option value="">-- Pilih Mobil --</option>
+                        <option value="Toyota Avanza">Toyota Hilux</option>
+                        <option value="Honda Brio">Honda Civic</option>
+                        <option value="Toyota Innova">Honda HRV</option>
+                        <option value="Mitsubishi Xpander">Hyundai Palisade</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="lamaSewa">Lama Sewa (Hari):</label>
+
+                    <input
+                        type="number"
+                        id="lamaSewa"
+                        name="lamaSewa"
+                        placeholder="Masukkan lama sewa"
+                        min="1"
+                        max="7"
+                        required>
+                </div>
+
+                <br>
+
+                <button type="submit">Kirim Penyewaan</button>
+
+                <p id="pesan" aria-live="polite"></p>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Identitas Mahasiswa</h2>
+            <p>Nama: Winda Septiana</p>
+            <p>NIM: TI22250045</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nonawie rent Cars. Semua Hak Dilindungi.</p>
+    </footer>
+    <script src="sjavascript.js"></script>
+
+</body>
+</html>
